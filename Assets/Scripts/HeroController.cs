@@ -125,7 +125,7 @@ public class HeroController : MonoBehaviour
     public void ChangeFlowers (int amount)
     {
         currentFlowers = Mathf.Clamp(currentFlowers + amount, 0, maxFlowers);
-        UIHealthBar.instance.SetValue(currentFlowers / (float)maxFlowers);
+        UIFlowerBar.instance.SetValue(currentFlowers / (float)maxFlowers);
         Debug.Log(currentFlowers + "/" + maxFlowers);
     }
 
